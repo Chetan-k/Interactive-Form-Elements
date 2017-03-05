@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Forms</title>
+    <script>
+        var IE7=false;
+    </script>
+    <!--[if lt IE 8]>
+        <script>
+            var IE7=true;
+        </script>
+        <![endif]-->
+    <script>
+        if(!document.getElementById){
+            window.location='changeBrowser.html';
+        }
+    </script>
+
+    <script type="text/javascript" src="js/content.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/cookies.js"></script>
+    <script type="text/javascript" src="js/validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+</head>
+<body onload="init('firstSelect');" style="background-color: #D0D5AA" >
+
+<div id="oval">
+<h1>Grab your favourite food!</h1>
+</div>
+
+<div id="styleSelect" style="padding: 40px;width:400px;border:none;box-shadow:0px 0px 3px grey;">
+</div>
+
+<div id="image" style="position: absolute;left: 800px;top: -200px;"></div>
+
+<div id="form" style="position: absolute;left: -200px"></div>
+
+</body>
+</html>
